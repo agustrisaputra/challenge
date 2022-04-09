@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('api-docs', 'api_docs');
+
 Route::middleware(['auth'])
     ->group(function() {
         Route::get('', function() {
